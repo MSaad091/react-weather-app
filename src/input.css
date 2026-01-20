@@ -1,0 +1,111 @@
+/* ========================= */
+/* RESET */
+/* ========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ========================= */
+/* INPUT CONTAINER */
+/* ========================= */
+.input-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 25px 0;
+  padding: 0 20px;
+  flex-wrap: wrap; /* 🔥 important for mobile */
+}
+
+/* ========================= */
+/* INPUT FIELD */
+/* ========================= */
+.input-container input {
+  width: 100%;
+  max-width: 260px;
+  padding: 12px 18px;
+  border-radius: 30px;
+  border: 1px solid #d0d0d0;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* INPUT FOCUS */
+.input-container input:focus {
+  border-color: #1b3b5a;
+  box-shadow: 0 6px 15px rgba(27, 59, 90, 0.25);
+}
+
+/* ========================= */
+/* BUTTON */
+/* ========================= */
+.input-container button {
+  padding: 12px 26px;
+  border-radius: 30px;
+  border: none;
+  background-color: #1b3b5a;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+/* BUTTON HOVER */
+.input-container button:hover {
+  background-color: #2e5981;
+  transform: scale(1.05);
+}
+
+/* ========================= */
+/* MOBILE (320px – 480px) */
+/* ========================= */
+@media (max-width: 480px) {
+  .input-container {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 12px;
+  }
+
+  .input-container input,
+  .input-container button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .input-container input {
+    font-size: 15px;
+  }
+
+  .input-container button {
+    font-size: 15px;
+    padding: 11px;
+  }
+}
+
+/* ========================= */
+/* TABLET (481px – 768px) */
+/* ========================= */
+@media (min-width: 481px) and (max-width: 768px) {
+  .input-container {
+    padding: 0 20px;
+  }
+
+  .input-container input {
+    max-width: 65%;
+  }
+
+  .input-container button {
+    width: auto;
+  }
+}
+
+/* ========================= */
+/* DESKTOP*
